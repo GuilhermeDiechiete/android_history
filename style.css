@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÃO GLOBAL */
+* { margin: 0px; border: 0px; padding: 0px; }
+
+/* FONTES */
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype'); }
+
+/* VARIAVEIS */
+:root {
+    --verde0: #c5ebd6;
+    --verde1: #83e1ad;
+    --verde2: #3ddc84;
+    --verde3: #2fa866;
+    --verde4: #1a5c37;
+    --verde5: #063d1e;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-android: 'Android'; }
+
+/* CORPO */
+body {
+    background-color: var(--verde0);
+    font-family: var(--fonte-padrao); }
+
+/* AREA DO HEADER */
+header {
+    background-image: linear-gradient(var(--verde3), var(--verde5));
+    text-align: center;
+    padding: 40px 0px 40px 0px; }
+
+header > h1 {
+    color: var(--verde0);
+    font-family: var(--fonte-android);
+    font-size: 3em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.753);
+    box-shadow: 1px 1px 5px var(--verde5); }
+header > p {
+    color: var(--verde0);
+    padding-top: 10px;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto; }
+
+/* AREA MENU */
+
+nav {
+    background-color: var(--verde5);
+    padding: 10px;
+    text-align: center;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+nav > a:hover {
+    background-color: var(--verde3);
+    color: var(--verde5);
+    border-radius: 10px;
+}
+
+/* AREA MAIN ( CONTEÚDO */
+main {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px var(--verde4);
+    border-radius: 0px 0px 10px 10px; }
+
+main h1 {
+    color: #063d1e;
+    font-family: var(--fonte-android);
+    margin: 30px 0px 7px 0px ; }
+
+main h2 {
+    background-image: linear-gradient(to right, var(--verde1), transparent);
+    padding-left: 10px;
+    color: var(--verde4);
+    font-family: var(--fonte-android);
+    margin: 30px 0px 7px 0px ; }
+
+main img {
+    display: block;
+    margin: auto; }
+
+main iframe {
+    display: block;
+    margin: auto; }
+
+main p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 15px 0px;
+    line-height: 1em; }
+
+.img-pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.videos {
+    background-color: var(--verde5);
+    margin: 0px -20px 30px -20px;
+    padding: 10px;
+    position: relative;
+    padding-bottom: 59%;
+}
+.videos > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--verde1);
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+aside > h3 {
+    background-color: var(--verde4);
+    color: white;
+    padding: 10px;
+    margin: -20px -20px 0px -20px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > ul {
+    list-style-type: '\2714';
+    list-style-position: inside;
+    columns: 2;
+
+}
+
+footer {
+    background-color: var(--verde5);
+    color: var(--verde0);
+    padding: 20px;
+    text-align: center; }
+
